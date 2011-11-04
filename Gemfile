@@ -30,3 +30,15 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+gem 'haml'
+gem 'haml-rails', :group => :development
+gem 'simple_form'
+
+group :test do
+  gem 'database_cleaner'
+  gem 'rails3-generators' #mainly for factory_girl & simple_form at this point
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'cucumber-rails'
+  gem 'capybara'
+end
