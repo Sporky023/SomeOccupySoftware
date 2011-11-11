@@ -1,0 +1,23 @@
+%h1 Listing chunks
+
+%table
+  %tr
+    %th Document
+    %th First char at
+    %th Last char at
+    %th
+    %th
+    %th
+
+  - @chunks.each do |chunk|
+    %tr
+      %td= chunk.document
+      %td= chunk.first_char_at
+      %td= chunk.last_char_at
+      %td= link_to 'Show', chunk
+      %td= link_to 'Edit', edit_chunk_path(chunk)
+      %td= link_to 'Destroy', chunk, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Chunk', new_chunk_path

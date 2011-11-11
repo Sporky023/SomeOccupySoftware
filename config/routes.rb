@@ -1,4 +1,6 @@
 OccupySoftware::Application.routes.draw do
+  resources :chunks
+
   resources :documents
 
   resources :mockups do

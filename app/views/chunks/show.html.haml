@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Document:
+  = @chunk.document
+%p
+  %b First char at:
+  = @chunk.first_char_at
+%p
+  %b Last char at:
+  = @chunk.last_char_at
+
+= link_to 'Edit', edit_chunk_path(@chunk)
+\|
+= link_to 'Back', chunks_path

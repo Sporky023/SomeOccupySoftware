@@ -1,0 +1,15 @@
+= simple_form_for @chunk do |form|
+
+  -if @chunk.errors.any?
+    #errorExplanation
+      %h2= "#{pluralize(@chunk.errors.count, "error")} prohibited this #{Chunk.name.titleize} from being saved:"
+      %ul
+        - @chunk.errors.full_messages.each do |msg|
+          %li= msg  
+
+  = form.input :document, :label => 'Document'
+  = form.input :first_char_at, :label => 'First Char At'
+  = form.input :last_char_at, :label => 'Last Char At'
+
+  .actions
+    = form.button :submit
