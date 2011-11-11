@@ -1,0 +1,26 @@
+:javascript
+  $(function(){
+    $('#foo').mouseup(function(){
+      $('#selectionStart').text(window.getSelection().anchorOffset)
+      $('#selectionEnd').text(window.getSelection().focusOffset)
+    })
+    
+  })
+  
+  
+
+#foo="This is some crazy text"
+%br
+%br 
+start:
+#selectionStart
+  
+end:
+#selectionEnd
+
+%br
+%br
+
+#tagging_form
+  
+  
