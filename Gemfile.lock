@@ -98,6 +98,9 @@ GEM
     mime-types (1.17.2)
     multi_json (1.0.3)
     nokogiri (1.5.0)
+    pickle (0.4.10)
+      cucumber (>= 0.8)
+      rake
     polyglot (0.3.3)
     populator (1.0.0)
     rack (1.3.5)
@@ -200,6 +203,7 @@ DEPENDENCIES
   haml
   haml-rails
   jquery-rails
+  pickle
   populator
   rails (= 3.1.1)
   rails3-generators

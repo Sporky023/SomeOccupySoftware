@@ -9,7 +9,7 @@ Feature: Tagging Document Text
     When I go to the documents page
     Then I should see "Ballad of Jed Clampett"
     When I follow "Ballad of Jed Clampett"
-    Then I should see the document's body
+    Then I should see that document's body
     When I pretend to highlight "bubbling crude" # pretend because I don't know how to do this
     Then I should see a form
     When I fill in "tags" with "oil, black gold, Texas tea"
