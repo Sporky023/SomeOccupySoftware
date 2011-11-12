@@ -44,11 +44,11 @@ class ChunksController < ApplicationController
 
     respond_to do |format|
       if @chunk.save
-        format.html { redirect_to @chunk, notice: 'Chunk was successfully created.' }
-        format.json { render json: @chunk, status: :created, location: @chunk }
+        format.html { redirect_to @chunk.document, notice: 'Chunk was successfully created.' }
+        #format.json { render json: @chunk, status: :created, location: @chunk }
       else
-        format.html { render action: "new" }
-        format.json { render json: @chunk.errors, status: :unprocessable_entity }
+        format.html { redirect_to @chunk.document, notice: "That didn't work, try again" }
+        #format.json { render json: @chunk.errors, status: :unprocessable_entity }
       end
     end
   end

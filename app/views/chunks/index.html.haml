@@ -1,23 +1,13 @@
-%h1 Listing chunks
+%h1 Tagged Chunks of Text
 
 %table
   %tr
-    %th Document
-    %th First char at
-    %th Last char at
-    %th
-    %th
-    %th
-
+    %th document
+    %th text
+    %th tags
+    
   - @chunks.each do |chunk|
     %tr
-      %td= chunk.document
-      %td= chunk.first_char_at
-      %td= chunk.last_char_at
-      %td= link_to 'Show', chunk
-      %td= link_to 'Edit', edit_chunk_path(chunk)
-      %td= link_to 'Destroy', chunk, :confirm => 'Are you sure?', :method => :delete
-
-%br
-
-= link_to 'New Chunk', new_chunk_path
+      %td.document_title= link_to chunk.document.title, chunk.document
+      %td.text= chunk.text
+      %td.tags= chunk.tag_list
