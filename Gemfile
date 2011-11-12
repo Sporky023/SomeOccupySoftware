@@ -27,6 +27,8 @@ gem 'haml'
 gem 'haml-rails', :group => :development
 gem 'simple_form'
 
+gem 'acts-as-taggable-on'
+
 group :test do
   gem 'database_cleaner'
   gem 'rails3-generators' #mainly for factory_girl & simple_form at this point

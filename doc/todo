@@ -11,10 +11,10 @@ The purpose of this file is to track what my plan is as the commits pile up.
   [-] user highlights text within the body
   [-] upon mouseup, a form appears to the side so you can tag the chunk of text you highlighted
     - the action is chunks/create
-    [-] "this is the text you highlighted" (for confirmation)
-    [-] hidden: document_id
-    [-] hidden: starting_character
-    [-] hidden: ending_character
+    [x] "this is the text you highlighted" (for confirmation)
+    [x] hidden: document_id
+    [x] hidden: starting_character
+    [x] hidden: ending_character
     [-] text field: comma separated tags
     [-] submit: "save tags"
   [ ] user types in some tags:  "peanut butter, jelly"
