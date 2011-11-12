@@ -8,18 +8,20 @@ The purpose of this file is to track what my plan is as the commits pile up.
 
 [-] get a tagging workflow in place:
   [x] user is viewing a document's body text
-  [-] user highlights text within the body
-  [-] upon mouseup, a form appears to the side so you can tag the chunk of text you highlighted
+  [x] user highlights text within the body
+  [x] upon mouseup, a form appears to the side so you can tag the chunk of text you highlighted
     - the action is chunks/create
     [x] "this is the text you highlighted" (for confirmation)
     [x] hidden: document_id
     [x] hidden: starting_character
     [x] hidden: ending_character
-    [-] text field: comma separated tags
-    [-] submit: "save tags"
+    [x] text field: comma separated tags
+    [x] submit: "save tags"
   [x] user types in some tags:  "peanut butter, jelly"
   [x] user clicks "save tags"
-  [ ] then on the tags screen
+
+[ ] browse tags
+  [ ] on the tags screen
     [ ] should see "peanut butter", "jelly"
   [ ] click "peanut butter"
   [ ] then see "the text you highlighted"
