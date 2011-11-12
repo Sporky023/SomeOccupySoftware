@@ -16,9 +16,9 @@
         the text you selected
       = simple_form_for(@document.chunks.build) do |f|
         .uicomment [note these next three inputs will be hidden]
-        = f.input :document_id
-        = f.input :first_char_at
-        = f.input :last_char_at
+        = f.input :document_id, :as => :hidden
+        = f.input :first_char_at, :as => :hidden
+        = f.input :last_char_at, :as => :hidden
         
         
         = f.input :tag_list

@@ -17,8 +17,8 @@ The purpose of this file is to track what my plan is as the commits pile up.
     [x] hidden: ending_character
     [-] text field: comma separated tags
     [-] submit: "save tags"
-  [ ] user types in some tags:  "peanut butter, jelly"
-  [ ] user clicks "save tags"
+  [x] user types in some tags:  "peanut butter, jelly"
+  [x] user clicks "save tags"
   [ ] then on the tags screen
     [ ] should see "peanut butter", "jelly"
   [ ] click "peanut butter"
