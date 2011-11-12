@@ -4,7 +4,11 @@
 
 $(function(){
   $('#documents_show .document .body').mouseup(function(){
-    selection_start = window.getSelection().anchorOffset;
-    selection_end = window.getSelections().focusOffset;
+    first_char_at = window.getSelection().anchorOffset;
+    last_char_at = window.getSelection().focusOffset;
+    selected_text = window.getSelection().anchorNode.data.slice(first_char_at, last_char_at)
+    $(this).parent().find('.tagging form input[name="chunk[first_char_at]"]').val(first_char_at);
+    $(this).parent().find('.tagging form input[name="chunk[last_char_at]"]').val(last_char_at);
+    $(this).parent().find('.tagging .chunk_text').text(selected_text)
   })
 })
