@@ -2,13 +2,29 @@
 
 = link_to 'Back', documents_path
 
-.document
+#documents_show
 
-  %h1= @document.title
+  .document
 
-  .body
-    = @document.body
+    %h1= @document.title
+
+    .body
+      = @document.body
   
-  .tagging
-    TODO: implement tagging form here
+    .tagging
+      %h3 tag this text:
+      %p.chunk_text
+        the text you selected
+      = simple_form_for(@document.chunks.build, :remote => true) do |f|
+        .uicomment [note these next three inputs will be hidden]
+        = f.input :document_id
+        = f.input :first_char_at
+        = f.input :last_char_at
+        
+        
+        .uicomment [this next one is a dummy until I implement tags]
+        = label_tag :tags
+        = text_field_tag :tags
+        
+        = f.button :submit, "save tags"
 

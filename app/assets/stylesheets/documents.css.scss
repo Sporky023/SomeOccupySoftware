@@ -3,17 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.document{
-  .body{
-    float: left;
-    width: 50em;
-    background-color: #eef;
-    min-height: 400px;
-  }
-  .tagging{
-    float: left;
-    width: 30em;
-    background-color: #fee;
-    min-height: 400px;
+#documents_show{
+  .document{
+    .body{
+      float: left;
+      width: 50em;
+      background-color: #eef;
+      min-height: 400px;
+    }
+    .tagging{
+      float: left;
+      width: 30em;
+      background-color: #fee;
+      min-height: 400px;
+      .chunk_text{
+        font-size: 1.2em;
+        color: green;
+      }
+    }
   }
 }
+  
