@@ -17,4 +17,13 @@ The purpose of this file is to track what my plan is as the commits pile up.
     [-] hidden: ending_character
     [-] text field: comma separated tags
     [-] submit: "save tags"
+  [ ] user types in some tags:  "peanut butter, jelly"
+  [ ] user clicks "save tags"
+  [ ] then on the tags screen
+    [ ] should see "peanut butter", "jelly"
+  [ ] click "peanut butter"
+  [ ] then see "the text you highlighted"
+    [ ] with a link to the document
+    
+  (I realize this reads a lot like cucumber - I currently don't know how to handle simulating a highlight-this-text workflow in cucumber)
     
