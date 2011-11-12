@@ -4,7 +4,7 @@ As the project grows, and especially if others become involved, this should be p
 
 The purpose of this file is to track what my plan is as the commits pile up.
 
-[ ] populate database with some seed data
+[x] populate database with some seed data
 
 [ ] get a tagging workflow in place:
   [ ] user is viewing a document's body text
