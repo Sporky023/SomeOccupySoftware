@@ -1,0 +1,20 @@
+This file takes the place of a ticket or project tracking system like Pivotal Tracker.
+
+As the project grows, and especially if others become involved, this should be phased out and a proper project management system brought in.
+
+The purpose of this file is to track what my plan is as the commits pile up.
+
+[ ] populate database with some seed data
+
+[ ] get a tagging workflow in place:
+  [ ] user is viewing a document's body text
+  [ ] user highlights text within the body
+  [ ] upon mouseup, a form appears to the side so you can tag the chunk of text you highlighted
+    - the action is chunks/create
+    [ ] "this is the text you highlighted" (for confirmation)
+    [ ] text field: comma separated tags
+    [ ] hidden: document_id
+    [ ] hidden: starting_character
+    [ ] hidden: ending_character
+    [ ] submit: "save tags"
+    
