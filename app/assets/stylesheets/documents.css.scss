@@ -24,7 +24,13 @@
       .tags{
         color: #ccc;
         .tag_list{
-          color: green;
+          a{
+            color: green;
+            text-decoration: none;
+            &:hover{
+              text-decoration: underline;
+            };
+          }
         }
       }
     }

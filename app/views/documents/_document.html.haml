@@ -6,5 +6,5 @@
       (no tags)
     - else
       tags:
-      %span.tag_list= document.tag_list
+      %span.tag_list= raw document.tags.map{|tag| link_to(tag.name, :controller => "tags", :action => "show", :id => tag)}.join(', ')
   

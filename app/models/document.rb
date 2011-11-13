@@ -5,8 +5,12 @@ class Document < ActiveRecord::Base
   
   validates :user, :presence => true
   
+  def tags
+    chunks.map(&:tags).flatten.uniq
+  end
+  
   def tag_list
-    chunks.map(&:tags).flatten.uniq.map(&:name).join(', ')
+    tags.map(&:name).join(', ')
   end
 
 end
