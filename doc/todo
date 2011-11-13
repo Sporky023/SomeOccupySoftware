@@ -1,6 +1,6 @@
 
 
-[ ] add users, login, remember me, etc
+[x] add users, login, remember me, etc
   
 [ ] documents belong to users
 [ ] chunks belong to users  (and hence taggings)
