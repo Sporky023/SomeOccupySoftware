@@ -1,5 +1,7 @@
 OccupySoftware::Application.routes.draw do
   
+  root :to => "documents#index"
+  
   resources :tags
   
   resources :chunks

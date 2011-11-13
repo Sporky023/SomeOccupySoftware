@@ -9,4 +9,7 @@
   %body
     #header
       = render 'layouts/header'
+    #flashes
+      .notice= notice
+      .alert= alert
     = yield
