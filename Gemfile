@@ -6,6 +6,7 @@ gem 'rails', '3.1.1'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'pg'  # for heroku
 
 
 # Gems used only for assets and not required
@@ -30,6 +31,7 @@ gem 'ruby-debug19', :group => :development
 gem 'acts-as-taggable-on'
 
 gem 'devise'
+
 
 group :test do
   gem 'database_cleaner'
