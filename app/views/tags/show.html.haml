@@ -1,7 +1,14 @@
 %p#notice= notice
 
+%h1= "text tagged with '#{@tag.name}'"
+
 %table
   - @chunks.each do |chunk|
-    %tr
-      %td= chunk.text
-      %td= link_to chunk.document.title, chunk.document
+    %tr.chunk
+      %td.text= chunk.text
+      %td.document_title
+        from
+        = link_to chunk.document.title, chunk.document
+      %td
+        tagged by
+        = chunk.taggings.map(&:tagger).uniq.first.email

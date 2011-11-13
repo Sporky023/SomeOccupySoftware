@@ -40,10 +40,12 @@ class ChunksController < ApplicationController
   # POST /chunks
   # POST /chunks.json
   def create
+    tag_list = params[:chunk].delete(:tag_list)
     @chunk = Chunk.new(params[:chunk])
 
     respond_to do |format|
       if @chunk.save
+        current_user.tag(@chunk, :with => tag_list, :on => :tags)
         format.html { redirect_to @chunk.document, notice: 'Chunk was successfully created.' }
         #format.json { render json: @chunk, status: :created, location: @chunk }
       else

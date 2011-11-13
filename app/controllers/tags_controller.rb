@@ -12,7 +12,7 @@ class TagsController < ApplicationController
   def show
     @tag = ActsAsTaggableOn::Tag.find(params[:id])
     @chunks = Chunk.includes(:document).tagged_with(@tag.name)
-
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @tag }
