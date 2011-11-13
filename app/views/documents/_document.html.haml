@@ -2,5 +2,9 @@
   .title
     = link_to document.title, document
   .tags
-    = document.tag_list
+    - if document.tag_list.empty?
+      (no tags)
+    - else
+      tags:
+      %span.tag_list= document.tag_list
   
