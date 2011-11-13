@@ -1,0 +1,14 @@
+#header{
+  .tagline{
+    font-size: 2.5em;
+    float: left;
+  }
+  li{
+    list-style-type: none;
+    display: block;
+    float: left;
+    margin-left: 10px;
+  }
+  border-bottom: 1px solid black;
+  padding-bottom: 10px
+}

@@ -20,12 +20,12 @@ The purpose of this file is to track what my plan is as the commits pile up.
   [x] user types in some tags:  "peanut butter, jelly"
   [x] user clicks "save tags"
 
-[ ] browse tags
-  [ ] on the tags screen
-    [ ] should see "peanut butter", "jelly"
-  [ ] click "peanut butter"
-  [ ] then see "the text you highlighted"
-    [ ] with a link to the document
+[x] browse tags
+  [x] on the tags screen
+    [x] should see "peanut butter", "jelly"
+  [x] click "peanut butter"
+  [x] then see "the text you highlighted"
+    [x] with a link to the document
     
   (I realize this reads a lot like cucumber - I currently don't know how to handle simulating a highlight-this-text workflow in cucumber)
     
