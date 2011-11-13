@@ -37,5 +37,6 @@ group :test do
   gem 'cucumber-rails'
   gem 'capybara'
   gem 'pickle'
+  gem 'launchy'
   gem 'spork'
 end
