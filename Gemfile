@@ -25,6 +25,8 @@ gem 'haml'
 gem 'haml-rails', :group => :development
 gem 'simple_form'
 
+gem 'ruby-debug19', :group => :development
+
 gem 'acts-as-taggable-on'
 
 gem 'devise'
