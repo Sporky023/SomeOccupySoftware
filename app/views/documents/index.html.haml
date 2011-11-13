@@ -1,15 +1,11 @@
-%h1 all Documents
 
-%table
-  %tr
-    %th Title
-    %th Tags
+#documents_index
 
-  - @documents.each do |document|
-    %tr
-      %td= link_to document.title, document
-      %td= document.tag_list.join(', ')
-      
-%br
+  %h1 all Documents
 
-= link_to 'New Document', new_document_path
+  = link_to 'add a Document', new_document_path
+
+  .documents
+    - @documents.each do |document|
+      = render document, :cycle => cycle('even', 'odd')
+

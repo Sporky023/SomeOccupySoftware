@@ -7,9 +7,11 @@
   = csrf_meta_tags
 
   %body
-    #header
-      = render 'layouts/header'
-    #flashes
-      .notice= notice
-      .alert= alert
-    = yield
+    #page
+      #header
+        = render 'layouts/header'
+      #flashes
+        .notice= notice
+        .alert= alert
+      #main
+        = yield

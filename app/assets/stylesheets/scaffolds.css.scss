@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #eef;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -18,10 +18,9 @@ pre {
 a {
   color: #000;
   &:visited {
-    color: #666; }
-  &:hover {
-    color: #fff;
-    background-color: #000; } }
+    color: #666; 
+  }
+}
 
 div {
   &.field, &.actions {
@@ -57,5 +56,13 @@ div {
     
 .uicomment{
   color: #aaa;
+}
+
+#page{
+  background: white;
+  width: 970px;
+  padding: 1em;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px #aaa;
 }
   

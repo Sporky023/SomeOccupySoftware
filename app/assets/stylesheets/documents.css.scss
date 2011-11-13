@@ -2,6 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#documents_index{
+  .documents{
+    margin-top: 1em;
+    border-top: 2px solid #ccc;
+    .document{
+      margin-top: 0.5em;
+      padding: 0.3em;
+      &.odd{
+        background-color: #efe;
+      };
+      .title{
+        font-size: 1.5em;
+        a{
+          text-decoration: none;
+          &:hover{
+           text-decoration: underline; 
+          }
+        }
+      }
+    }
+  }
+  
+}
+
 
 #documents_show{
   .document{
