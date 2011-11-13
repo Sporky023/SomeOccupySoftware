@@ -21,8 +21,6 @@ gem 'jquery-rails'
 gem 'populator'
 gem 'faker'
 
-#gem 'ruby-debug19', :require => 'ruby-debug', :group => :development
-
 gem 'haml'
 gem 'haml-rails', :group => :development
 gem 'simple_form'
