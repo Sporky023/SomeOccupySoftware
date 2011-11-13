@@ -1,3 +1,26 @@
+
+
+[ ] add users, login, remember me, etc
+  
+[ ] documents belong to users
+[ ] chunks belong to users  (and hence taggings)
+
+[ ] documents have states: draft, published
+
+[ ] when viewing a document, should be able to see the set of tags
+  [ ] also see which chunks of text have been tagged
+    [ ] maybe when hovering over a tag, see that chunk scroll into view and get highlighted
+
+[ ] do we really need a link to "chunks"?
+
+
+
+
+
+--------------------------------------------------
+this was the first basic functionality
+
+
 This file takes the place of a ticket or project tracking system like Pivotal Tracker.
 
 As the project grows, and especially if others become involved, this should be phased out and a proper project management system brought in.
