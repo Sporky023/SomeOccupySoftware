@@ -1,4 +1,6 @@
 #header{
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
   .tagline{
     font-size: 2.5em;
     float: left;
@@ -10,6 +12,11 @@
     float: left;
     margin-left: 10px;
   }
-  border-bottom: 1px solid black;
-  padding-bottom: 10px
+  .auth{
+    color: #aaa;
+    float: right;
+    .email{
+      color: #88f;
+    }
+  }
 }

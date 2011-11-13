@@ -11,17 +11,19 @@
     .body= @document.body
   
     .tagging
-      %h3 tag this text:
-      %p.chunk_text
-        the text you selected
-      = simple_form_for(@document.chunks.build) do |f|
-        .uicomment [note these next three inputs will be hidden]
-        = f.input :document_id, :as => :hidden
-        = f.input :first_char_at, :as => :hidden
-        = f.input :last_char_at, :as => :hidden
+      - if user_signed_in?
+        %h3 tag this text:
+        %p.chunk_text
+          the text you selected
+        = simple_form_for(@document.chunks.build) do |f|
+          .uicomment [note these next three inputs will be hidden]
+          = f.input :document_id, :as => :hidden
+          = f.input :first_char_at, :as => :hidden
+          = f.input :last_char_at, :as => :hidden
+          = f.input :tag_list
+          = f.button :submit, "save tags"
+      - else
+        = link_to "sign in", new_user_session_path
+        to tag this text
         
-        
-        = f.input :tag_list
-        
-        = f.button :submit, "save tags"
 

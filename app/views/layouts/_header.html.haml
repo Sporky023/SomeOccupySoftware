@@ -4,4 +4,14 @@
   %li= link_to "documents", documents_path
   %li= link_to "tags", tags_path
   
+.auth
+  - if user_signed_in?
+    signed in as
+    %span.email= current_user.email
+    = link_to "sign out", destroy_user_session_path, :method => :delete
+  - else
+    = link_to "sign in", new_user_session_path
+    or
+    = link_to "sign up", new_user_registration_path
+  
 %br{:clear => "both"}
