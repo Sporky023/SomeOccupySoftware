@@ -4,11 +4,11 @@
 
 %table
   - @chunks.each do |chunk|
-    %tr.chunk
-      %td.text= chunk.text
-      %td.document_title
+    .chunk
+      .text= chunk.text
+      .document_title
         from
         = link_to chunk.document.title, chunk.document
-      %td
+      .tagged_by
         tagged by
         = chunk.taggings.map(&:tagger).uniq.first.email
