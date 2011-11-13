@@ -2,7 +2,7 @@ class DocumentsController < ApplicationController
   # GET /documents
   # GET /documents.json
   def index
-    @documents = Document.all
+    @documents = Document.includes(:chunks).all
 
     respond_to do |format|
       format.html # index.html.erb
