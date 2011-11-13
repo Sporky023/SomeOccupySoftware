@@ -2,10 +2,12 @@
 
 [x] add users, login, remember me, etc
   
-[ ] documents belong to users
+[x] documents belong to users
 [ ] chunks belong to users  (and hence taggings)
 
 [ ] documents have states: draft, published
+  [ ] only published appear in browse
+  [ ] only published are taggable
 
 [ ] when viewing a document, should be able to see the set of tags
   [ ] also see which chunks of text have been tagged
@@ -16,6 +18,8 @@
 [ ] ensure emails are going out
 
 [ ] paginate documents
+
+[ ] tagging form doesn't appear until you've selected text
 
 
 
