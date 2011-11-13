@@ -1,6 +1,7 @@
 %p#notice= notice
 
-
-= link_to 'Edit', edit_tag_path(@tag)
-\|
-= link_to 'Back', tags_path
+%table
+  - @chunks.each do |chunk|
+    %tr
+      %td= chunk.text
+      %td= link_to chunk.document.title, chunk.document

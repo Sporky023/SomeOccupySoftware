@@ -13,3 +13,6 @@ Feature: Tagging Document Text
     Then I should see "oil"
     And I should see "black gold"
     And I should see "Texas tea"
+    When I click "oil"
+    Then I should see "bubbling crude"
+    And I should see "Ballad of Jed Clampett"

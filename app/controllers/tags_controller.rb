@@ -1,7 +1,5 @@
 class TagsController < ApplicationController
   
-  # GET /tags
-  # GET /tags.json
   def index
     @tags = ActsAsTaggableOn::Tag.all
 
@@ -11,10 +9,9 @@ class TagsController < ApplicationController
     end
   end
 
-  # GET /tags/1
-  # GET /tags/1.json
   def show
     @tag = ActsAsTaggableOn::Tag.find(params[:id])
+    @chunks = Chunk.includes(:document).tagged_with(@tag.name)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -22,8 +19,6 @@ class TagsController < ApplicationController
     end
   end
 
-  # GET /tags/new
-  # GET /tags/new.json
   def new
     @tag = ActsAsTaggableOn::Tag.new
 
@@ -33,13 +28,10 @@ class TagsController < ApplicationController
     end
   end
 
-  # GET /tags/1/edit
   def edit
     @tag = ActsAsTaggableOn::Tag.find(params[:id])
   end
 
-  # POST /tags
-  # POST /tags.json
   def create
     @tag = ActsAsTaggableOn::Tag.new(params[:tag])
 
@@ -54,8 +46,6 @@ class TagsController < ApplicationController
     end
   end
 
-  # PUT /tags/1
-  # PUT /tags/1.json
   def update
     @tag = ActsAsTaggableOn::Tag.find(params[:id])
 
@@ -70,8 +60,6 @@ class TagsController < ApplicationController
     end
   end
 
-  # DELETE /tags/1
-  # DELETE /tags/1.json
   def destroy
     @tag = ActsAsTaggableOn::Tag.find(params[:id])
     @ActsAsTaggableOn::Tag.destroy
