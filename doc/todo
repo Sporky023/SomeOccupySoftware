@@ -3,7 +3,7 @@
 [x] add users, login, remember me, etc
   
 [x] documents belong to users
-[ ] chunks belong to users  (and hence taggings)
+[x] chunks belong to users  (and hence taggings)
 
 [ ] documents have states: draft, published
   [ ] only published appear in browse
